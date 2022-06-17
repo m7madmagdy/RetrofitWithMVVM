@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         postViewModel.postMutableLiveData.observe(this) {
             postAdapter.setData(it)
             binding.progressBar.visibility = View.GONE
-            recyclerView.visibility = View.VISIBLE
+            binding.recyclerView.visibility = View.VISIBLE
+            binding.fakeTv.visibility = View.VISIBLE
         }
     }
 }

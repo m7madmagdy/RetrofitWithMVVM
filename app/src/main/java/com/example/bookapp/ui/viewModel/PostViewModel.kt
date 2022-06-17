@@ -25,7 +25,7 @@ class PostViewModel : ViewModel() {
             }
 
             override fun onFailure(call: Call<List<PostModel>>, t: Throwable) {
-                Toast.makeText(context, "Error", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, "Error No Internet Connection", Toast.LENGTH_LONG).show()
             }
         })
     }
