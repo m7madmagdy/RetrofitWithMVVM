@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardUseCompatPadding="true"
+    android:id="@+id/cardView"
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp"
     android:layout_gravity="center">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardConstrain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

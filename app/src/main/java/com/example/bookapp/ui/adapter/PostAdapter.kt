@@ -3,7 +3,10 @@ package com.example.bookapp.ui.adapter
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bookapp.R
 import com.example.bookapp.ui.api.PostModel
@@ -37,6 +40,9 @@ class PostAdapter : RecyclerView.Adapter<PostAdapter.PostViewHolder>() {
             val idTv = itemView.findViewById<TextView>(R.id.idTv)
             val titleTv = itemView.findViewById<TextView>(R.id.titleTv)
             val bodyTv = itemView.findViewById<TextView>(R.id.bodyTv)
+            val cardView = itemView.findViewById<CardView>(R.id.cardView)
+            cardView.animation =
+                AnimationUtils.loadAnimation(itemView.context, R.anim.recycler_animation)
             idTv.text = postModel.id.toString()
             titleTv.text = postModel.title
             bodyTv.text = postModel.body
