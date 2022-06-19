@@ -1,7 +1,7 @@
 # Get Data from Server Using Retrofit, MVVM & RxAndroid
 
 ## **App Image**
-<img src="https://m7madmagdy.github.io/pages/book.png" width="300px">
+<img src="https://m7madmagdy.github.io/pages/book.png" width="300px" align="left">
 <br/>
 
 ## Get Data from server using Retrofit and Implement MVVM (Model-View-ViewModel) Archeticture
